@@ -1,0 +1,4 @@
+Supplementary resources for the book, including downloadable code and
+additional exercises, are available at https://nostarch.com/algorithmic-thinking
+
+C Programming: A Modern Approach, 2nd Edition, by K. N. King

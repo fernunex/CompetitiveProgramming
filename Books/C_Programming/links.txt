@@ -1,0 +1,6 @@
+http://knking.com/books/c2/answers/index.html
+
+For pitfalls 
+C Traps and Pitfalls
+
+Book by Andrew Koenig
