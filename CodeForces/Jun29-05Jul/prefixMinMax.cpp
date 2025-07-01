@@ -10,38 +10,32 @@ void solve(){
 
     cin >> n;
 
-    vector<long long> v(n), res(n, 0);
+    vector<long long> v(n), prefijos(n), sufijos(n);
 
     for (int i = 0; i < n; i++){
         cin >> v[i];
     }
 
-    res[0] = 1;
-    res[n-1] = 1;
-    int i = 0;
-    while (i + 1 < n)
-    {
-        if (v[i] < v[i + 1]) break;
-        res[i + 1] = 1;
-        i++;
+
+    // Finding prefijos
+    prefijos[0] = v[0];
+    for (int i = 1; i < n; i++){
+        prefijos[i] = min(prefijos[i-1], v[i]);
     }
 
-    i = n - 1;
-    while (i - 1 > 0)
-    {
-        if (v[i] > v[i - 1]) break;
-        res[i-1] = 1;
-        i++;
+    // Finding sufijos
+    sufijos[n-1] = v[n-1];
+    for (int i = n-2; i >= 0; i--){
+        sufijos[i] = max(v[i], sufijos[i+1]);
     }
-
-    int idx_min = min_element(v.begin(), v.end()) - v.begin();
-    int idx_max = max_element(v.begin(), v.end()) - v.begin();
     
-    res[idx_max] = 1;
-    res[idx_min] = 1;
 
     for (int i = 0; i < n; i++){
-        cout << res[i];
+        if (v[i] == sufijos[i] || v[i] == prefijos[i]){
+            cout << '1';
+        } else {
+            cout << '0';
+        }
     }
     cout << endl;
     
