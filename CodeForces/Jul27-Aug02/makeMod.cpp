@@ -1,7 +1,6 @@
 //Problem: https://codeforces.com/contest/1909/problem/B
 // Name: B. Make Almost Equal With Mod
 // Author: Fer Nunez
-// Editorial: NO
 
 #include <bits/stdc++.h>
 
