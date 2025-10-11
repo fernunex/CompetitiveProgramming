@@ -11,7 +11,17 @@ typedef long long ll;
 #define REP(i,a,n) for(int i=a;i<n;i++)
 
 void solve(){
-    int n;
+    int n, m, q, b1, b2, a;
+    cin >> n >> m >> q >> b1 >> b2 >> a;
+
+    int bLeft = min(b1,b2);
+    int bRight = max(b1,b2);
+
+    if (a > bLeft && a < bRight) cout << (bRight - bLeft)/2;
+    else if (a < bLeft) cout << bLeft - 1;
+    else cout << n - bRight;
+    cout << endl;
+    
 }
 
 int main(){
@@ -21,7 +31,3 @@ int main(){
     while(tt--) solve();
     return 0;
 }
-
-#include<iostream>
-#include<string>
-#include<algorithm>
