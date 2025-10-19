@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/fernunex/Documents/Personal/ICPC/CodeForces/Sep14-20",
-      "program": "/home/fernunex/Documents/Personal/ICPC/CodeForces/Sep14-20/build/Debug/outDebug",
+      "cwd": "/home/fernunex/Documents/Personal/ICPC/CodeForces",
+      "program": "/home/fernunex/Documents/Personal/ICPC/CodeForces/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
