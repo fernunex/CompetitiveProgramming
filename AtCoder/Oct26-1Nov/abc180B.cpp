@@ -16,6 +16,7 @@ typedef long long ll;
 #define pii pair<int, int>
 #define fi first
 #define sc second
+#define all(v) (v).begin(), (v).end()
 #define bg begin()
 #define ed end()
 #define rb rbegin()
@@ -23,18 +24,26 @@ typedef long long ll;
 #define lb lower_bound
 #define ub upper_bound
 #define pb push_back
-#define all(x) (x).begin(), (x).end()
-#define sll set<ll>
-#define vll vector<ll>
 
 void solve(){
-    int n;
+    string s;
+    cin >> s;
+
+    int counter = 0;
+    REP(i, 1, s.size()){
+        if (s[i] == '|'){
+            cout << counter << " ";
+            counter = 0;
+        } else counter++;
+    }
+    cout << endl;
 }
 
 int main(){
     cin.tie(0)->sync_with_stdio(0);
-    int tt;
-    cin>>tt;
-    while(tt--) solve();
+    // int tt;
+    // cin>>tt;
+    // while(tt--) 
+    solve();
     return 0;
 }
