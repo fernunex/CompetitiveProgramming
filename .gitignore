@@ -131,3 +131,6 @@ GitHub.sublime-settings
 
 # End of https://www.toptal.com/developers/gitignore/api/c,sublimetext,visualstudiocode,c++
 
+### Test files
+*.test
+### out files
